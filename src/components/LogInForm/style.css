@@ -1,0 +1,24 @@
+/* @primaryColor: #91d5ff;
+@primaryLightColor: #e6f7ff; */
+
+.form-container {
+	background-color: #e6f7ff;
+	border-radius: 10px;
+}
+
+.form-container .top-div {
+	padding: 2rem 2rem;
+	margin-bottom: 2rem;
+	background-color: #91d5ff;
+	border-radius: 6px;
+}
+.form-container .middle-div {
+	padding: 0 3rem;
+	border-radius: 6px;
+}
+.form-container .bottom-div {
+	padding: 2rem 2rem 1rem 2rem;
+	margin-top: 2rem;
+	background-color: #91d5ff;
+	border-radius: 6px;
+}
