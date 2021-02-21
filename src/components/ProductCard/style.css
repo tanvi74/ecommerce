@@ -1,0 +1,11 @@
+.product-image {
+	transition: all 0.3s ease;
+}
+
+.product-image:hover {
+	transform: scale(1.05);
+}
+
+.card {
+	display: inline-block;
+}
