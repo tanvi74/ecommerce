@@ -4,7 +4,7 @@ import './App.css';
 import Header from "./components/Header/Header";
 import LoginPage from "./components/LogInForm/LogInForm";
 import SignupPage from "./components/SignUpForm/SignUpForm";
-import CategorySelect from './components/CategorySelect'
+import CategorySelect from './components/CategorySelect';
 function App() {
   return (
     <div className="App">
@@ -17,6 +17,7 @@ function App() {
           <Route path="/login" component={LoginPage } />
           <Route path="/signup" component={SignupPage} />
           <Route path="/CategorySelect" component={CategorySelect} />
+          
         </Switch>
       </Router>
     </div>
