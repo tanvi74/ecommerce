@@ -7,6 +7,7 @@ import Home from "./components/Home/Home";
 import LoginPage from "./components/LogInForm/LogInForm";
 import SignupPage from "./components/SignUpForm/SignUpForm";
 import CategorySelect from "./components/CategorySelect";
+import SortPrice from "./components/SortPrice"
 class App extends React.Component {
   state = {
     searchedItems: [],
@@ -59,6 +60,7 @@ class App extends React.Component {
             <Route path="/login" component={LoginPage} />
             <Route path="/signup" component={SignupPage} />
             <Route path="/CategorySelect" component={CategorySelect} />
+            <Route path="/SortPrice" component={SortPrice} />
             <Route path="/searchresults">
               <h1>Search Results</h1>
             </Route>
