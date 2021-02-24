@@ -1,29 +1,30 @@
 .header {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	padding: 1rem 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
 }
 
 .logo {
-	margin: 0.2rem 1rem;
+  margin: 0.2rem 1rem;
 }
 
 .search-bar {
-	width: 30%;
+  width: 30%;
 }
 
 .nav-bar_small-screen {
-	display: none;
+  display: none;
 }
 @media (max-width: 768px) {
-	.header {
-		padding: 1rem 2%;
-	}
-	.nav-bar_large-screen {
-		display: none;
-	}
-	.nav-bar_small-screen {
-		display: block;
-	}
+  .header {
+    padding: 1rem 2%;
+  }
+  .nav-bar_large-screen {
+    display: none;
+  }
+  .nav-bar_small-screen {
+    display: block;
+  }
 }
