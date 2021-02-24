@@ -1,5 +1,5 @@
 // this page will be visible weather logged in or not
-
+//items will be sorted according to the price
 import React from 'react';
 import 'antd/dist/antd.css'; //antd library is used
 import { Menu , Button} from 'antd';
@@ -24,7 +24,7 @@ try{
     categoryId: "60053042c41535052c98e6ae",
     subCategoryId:"123"
   }
-  const url="https://humaps-12.herokuapp.com/get_products";
+  const url="https://humaps-12.herokuapp.com/getSortedItems";
   const response = await fetch(url,{
     method: "POST",
     body: JSON.stringify(_data),
