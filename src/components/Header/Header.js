@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { string, bool } from "prop-types";
 import defaultConfigs from "./defaultConfigs";
 import NavBar from "../NavBar/NavBar";
-
+import CategoryDropdown from "./../CategoryDropdown";
 import "./style.css";
 
 const { Search } = Input;
@@ -40,6 +40,7 @@ export default class Header extends React.Component {
           <Link to="/">
             <h1 className="logo">{this.props.websiteName}</h1>
           </Link>
+          <CategoryDropdown />
           {this.props.hasSearchBar ? (
             <Search
               className="search-bar"

@@ -5,7 +5,6 @@ import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
 import LoginPage from "./components/LogInForm/LogInForm";
 import SignupPage from "./components/SignUpForm/SignUpForm";
-import CategorySelect from "./components/CategorySelect";
 function App() {
   const [searchTerm, setSearchTerm] = useState("");
 
@@ -20,8 +19,6 @@ function App() {
           </Route>
           <Route path="/login" component={LoginPage} />
           <Route path="/signup" component={SignupPage} />
-          <Route path="/CategorySelect" component={CategorySelect} />
-          <Route path="/searchresults"></Route>
         </Switch>
       </Router>
     </div>
