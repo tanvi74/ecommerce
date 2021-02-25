@@ -3,8 +3,6 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import {useSelector} from 'react-redux';
 import "./App.css";
 import MainFrame from './components/MainFrame/MainFrame';
-import Header from "./components/Header/Header";
-import Home from "./components/Home/Home";
 import LoginPage from "./components/LogInForm/LogInForm";
 import SignupPage from "./components/SignUpForm/SignUpForm";
 function App() {
