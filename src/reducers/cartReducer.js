@@ -1,4 +1,4 @@
-// const initState = [];
+const initState = [];
 
 
 export default (state=[], action)=>{
@@ -11,6 +11,9 @@ export default (state=[], action)=>{
         console.log(state)
         return state.filter(item => item !== action.payload)
         
+    }
+    else if(action.type==="LOGOUT"){
+        return initState;
     }
     else    
         return state;
