@@ -4,6 +4,8 @@ import { Route } from 'react-router-dom';
 import Home from "../components/Home/Home";
 import Cart from '../components/AddToCart/AddToCart';
 import ProductDetail from '../components/ProductDetail/DetailProductPage';
+import MyAccount from '../components/MyAccount/MyAccount';
+import OrderDetails from '../components/OrderDetails/OrderDetails'
 
 const routes = [
   {
@@ -20,7 +22,17 @@ const routes = [
     path: '/product/:productId',
     component: ProductDetail,
     key: '/product/:productId'
-  }
+  },
+  {
+    path: '/myaccount',
+    component: MyAccount,
+    key: '/myaccount'
+  },
+  {
+    path: '/orderdetail/:orderId',
+    component: OrderDetails,
+    key: '/orderdetail/:orderId'
+  },
   
 ];
 
