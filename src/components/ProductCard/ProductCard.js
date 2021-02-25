@@ -38,24 +38,29 @@ class ProductCard extends React.Component {
   render() {
     return (
       <div className="card">
-        <Link to={`/product/${this.props.id}`}>
-        <Card
-          hoverable
-          style={{ width: this.props.size, alignItems: "center" }}
-          cover={
-            <img
-              className="product-image"
-              alt="example"
-              src={this.props.imgURL}
-            />
-          }
-        >
-          <Meta title={this.props.productName} />
-          <p>{`Price: ${this.props.priceCurrencySign}${this.props.price}`}</p>
-          <Meta description={this.props.description} />
-          <Button type="primary" style={{marginTop: 20}} onClick={()=>{this.props.cart(this.props.id); alert("Product Added Successfully")}}> Add to Cart</Button>
-        </Card>
-        </Link>
+         <Card>
+              <Link to={`/product/${this.props.id}`}>
+              
+              <Card
+                hoverable
+                style={{ width: this.props.size, alignItems: "center" }}
+                cover={
+                  <img
+                    className="product-image"
+                    alt="example"
+                    src={this.props.imgURL}
+                  />
+                }
+              >
+                <Meta title={this.props.productName} />
+                <p>{`Price: ${this.props.priceCurrencySign}${this.props.price}`}</p>
+                <Meta description={this.props.description} />
+                
+              </Card>
+              </Link>
+              <Button type="primary" style={{marginTop: 20}} onClick={()=>{this.props.cart(this.props.id); alert("Product Added Successfully")}}> Add to Cart</Button>
+            </Card>
+        
         
       </div>
     );
