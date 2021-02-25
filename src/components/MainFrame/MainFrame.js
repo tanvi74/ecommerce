@@ -56,10 +56,14 @@ function MainFrame() {
             <Layout>
                 <Header className="site-layout-background" style={{ padding: 0 }} > 
                 <Row type="flex" justify="space-around" align="middle">
-                <Col span={5}><span className="adminDashboard">HyperLocal</span></Col>
-                  <Col span={10}><Search placeholder="Search Products by Pincode" onSearch={(e)=>{dispatch(searchTerm(e))}} enterButton /></Col>
+                <Col ><span className="adminDashboard">HyperLocal</span></Col>
+                  <Col>
+                  <Search placeholder="Search Products by Pincode" onSearch={(e)=>{dispatch(searchTerm(e))}} enterButton /> </Col>
+                  <Col>
+                  <Search placeholder="Search Products" onSearch={(e)=>{console.log(e)}} enterButton />
+                  </Col>
                   <Col><CategoryDropdown /></Col>
-                  <Col span={4}>
+                  <Col>
                       <Dropdown overlay={menu} placement="bottomRight" arrow>
                         <Button type="primary" size="large">Setting</Button>
                       </Dropdown>

@@ -4,7 +4,9 @@ import { string, number } from "prop-types";
 import defaultConfigs from "./defaultConfigs";
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
+import {Link} from 'react-router-dom';
 import cart from '../../Actions/cart';
+import ProductDetail from '../ProductDetail/DetailProductPage'
 import "./style.css";
 
 const { Meta } = Card;
@@ -36,6 +38,7 @@ class ProductCard extends React.Component {
   render() {
     return (
       <div className="card">
+        <Link to={`/product/${this.props.id}`}>
         <Card
           hoverable
           style={{ width: this.props.size, alignItems: "center" }}
@@ -52,6 +55,8 @@ class ProductCard extends React.Component {
           <Meta description={this.props.description} />
           <Button type="primary" style={{marginTop: 20}} onClick={()=>{this.props.cart(this.props.id); alert("Product Added Successfully")}}> Add to Cart</Button>
         </Card>
+        </Link>
+        
       </div>
     );
   }

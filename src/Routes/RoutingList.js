@@ -2,8 +2,8 @@ import React from 'react';
 import { Route } from 'react-router-dom';
 
 import Home from "../components/Home/Home";
-import Cart from '../components/AddToCart/AddToCart'
-
+import Cart from '../components/AddToCart/AddToCart';
+import ProductDetail from '../components/ProductDetail/DetailProductPage';
 
 const routes = [
   {
@@ -16,6 +16,11 @@ const routes = [
     component: Cart,
     key: '/cart',
   },
+  {
+    path: '/product/:productId',
+    component: ProductDetail,
+    key: '/product/:productId'
+  }
   
 ];
 
