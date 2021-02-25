@@ -1,5 +1,5 @@
 const defaultConfigs = {
-  size: 200,
+  size: 250,
   productName: "Demo Product",
   imgURL: "https://via.placeholder.com/200/771796",
   price: 10,

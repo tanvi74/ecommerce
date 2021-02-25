@@ -17,6 +17,7 @@ class ProductBundle extends React.Component {
     const products = this.props.items.map((item) => {
       return (
         <ProductCard
+          id = {item.key}
           key={item.productName}
           size={item.size}
           productName={item.productName}

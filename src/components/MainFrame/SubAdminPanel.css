@@ -1,0 +1,106 @@
+
+
+#components-layout-demo-custom-trigger .trigger {
+    font-size: 18px;
+    line-height: 64px;
+    padding: 0 24px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  #components-layout-demo-custom-trigger .trigger:hover {
+    color: #1890ff;
+  }
+  
+  #components-layout-demo-custom-trigger .logo {
+    height: 32px;
+    background: rgba(255, 255, 255, 0.3);
+    margin: 16px;
+  }
+  
+  .ant-layout-sider{
+    flex: 0 0 300px ;
+    max-width: 300px ;
+    min-width: 200px ;
+    width: 400px ;
+  }
+
+  .site-layout .site-layout-background {
+    background: #fff;
+  }
+
+  .trigger {
+    font-size: 18px;
+    line-height: 64px;
+    padding: 0 24px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .trigger:hover {
+    color: #1890ff;
+  }
+  
+  .logo {
+    height: 40px;
+    background: rgba(255, 255, 255, 0.3);
+    margin: 16px;
+    
+    /* font-weight: bold; */
+    text-align: center;
+    font-size: 23px;
+    color: white;
+  }
+  
+.ant-layout, .ant-layout-has-sider, .space-align-container{
+    min-height: 100vh !important;
+}
+
+.ant-layout-header{
+    background: ghostwhite !important;
+}
+
+.adminDashboard{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.ant-layout-sider-zero-width-trigger{
+    top: 10px !important;
+    background: ghostwhite !important;
+    color: black !important;
+}
+
+
+.ant-input-group-wrapper{
+    width: 70% !important;
+    margin-top: 16px;
+    /* float: right; */
+}
+
+.ant-btn-primary{
+    background-color: #001529 !important;
+}
+
+.servicesCard{
+  background-color: ghostwhite !important;
+  border-radius: 10px !important;
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+}
+
+.allAppliancesCard{
+  margin-bottom: 50px !important;
+}
+
+.serviceSelection{
+  width: 500px !important;
+}
+
+.acceptBtn{
+  background-color: green !important;
+}
+
+.declineBtn{
+  background-color: red !important;
+}

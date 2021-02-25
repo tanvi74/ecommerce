@@ -2,11 +2,14 @@ import React from "react";
 import { Form, Input, Button } from "antd";
 import axios from "axios";
 import defaultConfigs from "./defaultConfigs";
+import {bindActionCreators} from 'redux';
+import {connect} from 'react-redux';
+import regAction from '../../Actions/regAction';
 import "./style.css";
 
-export default class SignUpForm extends React.Component {
+class SignUpForm extends React.Component {
   static defaultProps = { ...defaultConfigs };
-
+  
   state = {
     phone: "",
     uid: "",
@@ -15,15 +18,17 @@ export default class SignUpForm extends React.Component {
   onSubmitHandler = async (e) => {
     e.preventDefault();
     const response = await axios.post(
-      "https://humaps-12.herokuapp.com/register_customer",
+      `${window.apihost}/register_customer`,
       {
         UID: this.state.uid,
         PHONE: this.state.phone,
       }
     );
-    console.log(response);
-    window.alert(response.data.message);
-    window.location.pathname = "/";
+    console.log(response.data);
+    // window.alert(response.data.message);
+    if(response.data.status === "success")
+        this.props.regAction(response.data);
+    
   };
 
   render() {
@@ -87,3 +92,11 @@ export default class SignUpForm extends React.Component {
     );
   }
 }
+
+function mapDispatchToProps(dispatch){
+    return bindActionCreators({
+        regAction: regAction
+    },dispatch)
+}
+
+export default connect(null,mapDispatchToProps)(SignUpForm);
