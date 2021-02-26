@@ -33,35 +33,12 @@ function SiderMenu({ handleOnCollapse, collapsed }) {
             pathname: '/cart',
         });
         break;
-      case 'AssignRequests':
-        history.push({
-            pathname: '/sub-admin/assign-requests',
-            
+      case 'MyAccount': 
+          history.push({
+            pathname: '/myaccount',
         });
         break;
-      case 'ChooseProducts':
-        history.push({
-            pathname: '/sub-admin/choose-products',
-            });
-        break;
-      case 'ChooseAppliances':
-        history.push({
-            pathname: '/sub-admin/choose-appliances',
-            
-        });
-        break;
-      case 'ChooseProjects':
-        history.push({
-            pathname: '/sub-admin/choose-projects',
-            
-        });
-        break;
-      case 'ChoosePlans':
-        history.push({
-            pathname: '/sub-admin/choose-plans',
-            
-        });
-        break;
+     
       default:
         history.push({
             pathname: '/'
